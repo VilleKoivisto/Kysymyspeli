@@ -1,6 +1,7 @@
 # Tästä lähtee meidän superhieno kyssäripeli
 
 def main():
+
     laskuri = 0
 
     print("Let the games begin")
@@ -41,7 +42,6 @@ def main():
         print("Pystyt parempaan!")
     else:
         print("daaaaaaamn...")
-
 
 
 
