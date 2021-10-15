@@ -1,7 +1,8 @@
 # Tästä lähtee meidän superhieno kyssäripeli
-import random
+
 
 def main():
+
     pisteet = 0
     aloitatko = str(input("Paina 'k' jos haluat aloittaa: "))
 
