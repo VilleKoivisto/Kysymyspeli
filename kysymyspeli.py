@@ -1,49 +1,48 @@
 # Tästä lähtee meidän superhieno kyssäripeli
 
+
 def main():
 
-    laskuri = 0
+    pisteet = 0
+    aloitatko = str(input("Paina 'k' jos haluat aloittaa: "))
 
-    print("Let the games begin")
-    while True:
-        kysymys1 = input("Kissa vai Koira? (1) = Kissa, (2) = Koira: ")
-        if kysymys1 == "1":
-            print("Väärä vastaus :(")
-        elif kysymys1 == "2":
-            print("Oikea vastaus!!!!")
-            laskuri += 1
-        else:
-            print("Valitse numero 1 tai 2")
+    if aloitatko == "k":
+        while True:
+            print("Vastaa k tai e, mikä tahansa muu lopettaa.")
 
-        kysymys2 = input("Vasen vai Oikea? (1) = Vasen, (2) = Oikea: ")
-        if kysymys2 == "1":
-            print("Väärä vastaus :(")
-        elif kysymys2 == "2":
-            print("Oikea vastaus!!!!")
-            laskuri += 1
-        else:
-            print("Valitse numero 1 tai 2")
+            kysymys1 = input("Onko Thaikuissa kivaa (k/e): ")
+            if kysymys1 == "k":
+                print("Oikein!")
+                pisteet += 1
+            elif kysymys1 == "e":
+                print("Väärin!")
+            else:
+                break
 
-        kysymys3 = input("Salaatti vai Pitsa? (1) = Salaatti, (2) = Pitsa: ")
-        if kysymys3 == "1":
-            print("Väärä vastaus :(")
-        elif kysymys3 == "2":
-            print("Oikea vastaus!!!!")
-            laskuri += 1
-        else:
-            print("Valitse numero 1 tai 2")
-        break
-    print(f"Kokonaispistemääräsi on {laskuri} pistettä!")
-    if laskuri == 3:
-        print("Täydet pisteet, avaa olut hyvillä mielin!")
-    elif laskuri == 2:
-        print("Hyvät pojot, juo puolikas olut")
-    elif laskuri == 1:
-        print("Pystyt parempaan!")
-    else:
-        print("daaaaaaamn...")
+            kysymys2 = input("Onko C# parempi kuin Python (k/e): ")
+            if kysymys2 == "e":
+                print("Oikein!")
+                pisteet += 1
+            elif kysymys2 == "k":
+                print("Väärin!")
+            else:
+                break
 
+            kysymys3 = input("Onko GCP parasta ikinä (k/e): ")
+            if kysymys3 == "k":
+                print("Oikein!")
+                pisteet += 1
+            elif kysymys3 == "e":
+                print("Väärin!")
+            else:
+                break
+
+    print(f"Sait {pisteet} pistettä!")
 
 
 if __name__ == "__main__":
+    print("Tervetuloa kysymyspeliin!")
+
     main()
+
+    print("Moikka!")
